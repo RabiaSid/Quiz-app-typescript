@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+*{
+	box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root{
+	text-size-adjust: 100%;
+	letter-spacing: normal;
+	background:linear-gradient(to top left, #43cbff 7%, #9708cc 100%);
+	margin: 0 auto;
+	width: 100vw;
+  height: 100vh;
+ 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-gradient{
+  background: linear-gradient(rgb(5, 6, 45), rgb(5, 6, 45)) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 500em;
+  border: 1px solid transparent;
+  cursor: pointer;
+  width: 95%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-gradient{
+  font-size: 1.2rem;
+  font-weight: 400;
+  background: -webkit-linear-gradient(#43cbff , #9708cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-.App-link {
-  color: #61dafb;
+.btn-gradient:hover{
+  background: #7753df;
+  border-radius: 500em;
+  border: 1px solid transparent;
+  cursor: pointer;
+  width: 95%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-gradient:hover .text-gradient{
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.option-border{
+  border: 1px solid grey;
+  border-radius: 500em;
+  margin: 10px 0;
+  padding: 10px 2px;
+}
+.heading-1{
+  font-family: 'Gluten', cursive;
+  font-size: 5rem;
+  text-shadow: 5px 5px 3px #333;
+}
+.heading-2{
+  font-family: 'Gluten', cursive;
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 3px #333;
+}
+.heading-3{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+.text-1{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  text-align: justify;
+  font-style: italic;
+}
+.text-2{
+  font-family: 'Work Sans', sans-serif;
+  color: grey;
+}
+.option-border:hover{
+  border: 1px solid #ffffff;
+  /* border-radius: 500em;
+  margin: 10px 0;
+  padding: 10px 2px; */
+}
+.option-border:hover .text-2{
+  font-family: 'Work Sans', sans-serif;
+  color: #ffffff;
 }

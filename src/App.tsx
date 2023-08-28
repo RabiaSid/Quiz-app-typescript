@@ -1,25 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Quizcard from "./components/card";
+import Quizbutton from "./components/button";
 
 function App() {
+
+  // const questions = [
+  //   {
+  //     question: `"Write the following statement in the form of an equation. “The sum
+  //     of three times x and 10 is 23."`,
+  //     options: ["3x – 10 = 23", "3x + 23 = 10", "3x + 10 = 2", "3x – 23 = 10"],
+  //     correctAnswer: "3x + 10 = 2",
+  //   },
+  // ];
+  const handleButtonClick = () => {
+    // Handle button click logic
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <div className="row h-100 m-0 p-0 align-items-center">
+        <div
+          className="col-11 col-md-4 col-lg-4 col-xl-6 justify-content-center align-items-center"
+          style={{
+            background: "transparent",
+            textAlign: "center",
+            color: "white",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <h1 className="heading-1">Quiz App</h1>
+          <h3 className="heading-2">Let's Play</h3>
+        </div>
+        <div className="col-12 col-md-8 col-lg-8 col-xl-6  justify-content-center align-items-center text-center">
+          <div className="row justify-content-center align-items-center">
+            <div
+              className="col-11 col-lg-10 col-xl-10 pt-4 pb-4 px-2 shadow"
+              style={{
+                background: "rgb(5, 6, 45)",
+                textAlign: "center",
+                color: "white",
+                borderRadius: "20px",
+              }}
+            >
+              <Quizcard />
+              <Quizbutton onClick={handleButtonClick} label="Next" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
