@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <div className="row h-100 m-0 p-0 align-items-center">
+      <div className="row m-0 p-0 align-items-center ">
         <div
           className="col-11 col-md-4 col-lg-4 col-xl-6 justify-content-center align-items-center"
           style={{
@@ -27,8 +27,10 @@ function App() {
             color: "white",
           }}
         >
-          <h1 className="heading-1">Quiz App</h1>
-          <h3 className="heading-2">Let's Play</h3>
+          <div className="row">
+          <text className="heading-1">Quiz App</text>
+          <text className="heading-2">Let's Play</text>
+          </div>
         </div>
         <div className="col-12 col-md-8 col-lg-8 col-xl-6  justify-content-center align-items-center text-center">
           <div className="row justify-content-center align-items-center">
